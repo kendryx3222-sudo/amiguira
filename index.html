@@ -37,13 +37,6 @@
       letter-spacing:0.6px;
       color:#3b0b6f;
     }
-    .message{
-      display:inline-flex;
-      align-items:center;
-      gap:14px;
-      justify-content:center;
-      flex-wrap:wrap;
-    }
     .heart{
       width:64px;
       height:64px;
@@ -70,33 +63,25 @@
       60%{opacity:1;transform:translateY(-8px) scale(1.02);filter:brightness(1)}
       100%{opacity:1;transform:translateY(0) scale(1);filter:brightness(1)}
     }
-    /* Responsive */
-    @media (max-width:420px){
-      h1{font-size:1.6rem}
-      .heart{width:52px;height:52px}
-    }
   </style>
 </head>
 <body>
   <div class="card">
     <h1>grax por mi amiguita</h1>
 
-    <div class="message">
-      <!-- Corazón morado (SVG) -->
-      <svg class="heart" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <defs>
-          <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
-            <stop offset="0" stop-color="#9F7AEA"/>
-            <stop offset="1" stop-color="#7C3AED"/>
-          </linearGradient>
-        </defs>
-        <path d="M12 21s-7.5-4.7-9.3-8.1C-1 7.9 4.2 3 7.9 6.1 9.6 7.6 12 10 12 10s2.4-2.4 4.1-3.9C19.8 3 25 7.9 21.3 12.9 19.5 16.3 12 21 12 21z" fill="url(#g)" opacity="0.98"/>
-      </svg>
-    </div>
+    <!-- Corazón morado -->
+    <svg class="heart" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0" stop-color="#9F7AEA"/>
+          <stop offset="1" stop-color="#7C3AED"/>
+        </linearGradient>
+      </defs>
+      <path d="M12 21s-7.5-4.7-9.3-8.1C-1 7.9 4.2 3 7.9 6.1 9.6 7.6 12 10 12 10s2.4-2.4 4.1-3.9C19.8 3 25 7.9 21.3 12.9 19.5 16.3 12 21 12 21z" fill="url(#g)" opacity="0.98"/>
+    </svg>
 
-    <!-- Ramo de tulipanes elegido -->
-    <img class="bouquet" src="LaBotanika25.webp" alt="Ramo de tulipanes" />
-
+    <!-- Imagen de tulipanes desde internet -->
+    <img class="bouquet" src="https://upload.wikimedia.org/wikipedia/commons/7/73/Tulips_in_spring.jpg" alt="Ramo de tulipanes" />
   </div>
 </body>
 </html>
